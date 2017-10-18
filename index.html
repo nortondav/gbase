@@ -28,32 +28,38 @@
 
 		<h3>Git Management</h3>
 		<ul>
-			<li><strong>$git config --global user.name 'John Doe'</strong>      -- Set name</li>
-			<li><strong>$git config --global user.email 'john@doe.dom'</strong>      -- Set name</li>
+			<li><strong>$git config --global user.name 'John Doe'</strong>           -- Set owner name</li>
+			<li><strong>$git config --global user.email 'john@doe.dom'</strong>      -- Set owner email address</li>
 		</ul>
 
 		<h3>Git Add Example</h3>
 		<ul>
-			<li><strong>$git add index.html</strong>       -- add file to staging area</li>
+			<li><strong>$git add index.html</strong>               -- add file to staging area</li>
 			<li><strong>$git rm --cached index.html</strong>       -- remove file from staging area</li>
-			<li><strong>$git add *.html</strong>       -- add all .html files to staging area</li>
-			<li><strong>$git add .</strong>       -- add all files to the staging area</li>
+			<li><strong>$git add *.html</strong>                   -- add all .html files to staging area</li>
+			<li><strong>$git add .</strong>                        -- add all files to the staging area</li>
 			<i>Note: a <strong>$git add</strong> should be done prior to a <strong>$git commit</strong> to ensure all the latest changes are captured</i>
 		</ul>
 
 		<h3>Git Commit Example</h3>
 		<ul>
-			<li><strong>$git commit</strong>       -- commit changes and open editor to add comments</li>
-			<li><strong>$git commit -m 'comment ...'</strong>       -- commit changes with specified comment (don't open editor)</li>
-
+			<li><strong>$git commit</strong>                        -- commit changes and open editor to add comments</li>
+			<li><strong>$git commit -m 'comment text ...'</strong>       -- commit changes with specified comment (don't open editor)</li>
 		</ul>
 
 		<h3>Git Branch Example</h3>
 		<ul>
 			<li><strong>$git branch [branchname]</strong>       -- create new branch</li>
 			<li><strong>$git checkout [branchname] </strong>    -- change over from master to new branch</li>
-			<li><strong>$git merge [branchname] </strong>    -- merge branch with branch currently in i.e. master</li>
+			<li><strong>$git merge [branchname] </strong>       -- merge branch with branch currently in i.e. master</li>
+		</ul>
 
+		<h3>Git Remote Repositories</h3>
+		<ul>
+			<li><strong>$git remote</strong>                                                      -- list remote repositories</li>
+			<li><strong>Sgit remote add origin https://github.com/nortondav/gbase.git </strong>   -- add github remote repository</li>
+			<li><strong>$git push -u origin master </strong>                                      -- push files in the master branch to the github remote repository</li>
+			<li><strong>$git push</strong>                                                        -- push to repo once logged in during previous step if pushing new changes from local repo to the remote repo</li>
 		</ul>
 	</section>
 
